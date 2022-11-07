@@ -1,0 +1,46 @@
+<html>
+    <title> 
+        Welcome to TDMPOC 
+      </title>
+        
+      <!-- text-decoration property to remove
+          underline from anchor tag -->
+      <style>
+          #GFG {
+              text-decoration: none;
+          }
+      </style>
+  </head> 
+    <center>
+    <h1>Orders table data</h1>
+    <table border="3"> 
+        <thead> 
+        <tr> 
+            <th>order_id</th> 
+            <th>customer_id</th> 
+            <th>product_id</th> 
+            <th>quantity</th> 
+            <th>order_total</th> 
+        </tr> 
+        </thead> 
+        <tbody> 
+            {% for row in value %}  
+                <tr> 
+                    <td>{{row[0]}}</td> 
+                    <td>{{row[1]}}</td>
+                    <td>{{row[2]}}</td>
+                    <td>{{row[3]}}</td>
+                    <td>{{row[4]}}</td>
+                    <td>{{row[5]}}</td> 
+                </tr> 
+            {% endfor %} 
+        </tbody> 
+    </table> 
+    <br> <br>
+
+<button><a id = "GFG" href="http://127.0.0.1:5000/">
+    HOME PAGE
+ </a></button>
+</center>
+</html>
+
